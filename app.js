@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const router = require("./routes/router");
 const cors = require("cors");
-const port = 8004;
+const port = process.env.port || 8004;
 
 // middle ware
 app.use(express.json());
