@@ -5,13 +5,11 @@ import Alert from "react-bootstrap/Alert";
 
 const Home = () => {
   const [show, setShow] = useState(false);
-
   const [email, setEmail] = useState("");
 
   const sendEmail = async (e) => {
     e.preventDefault();
-
-    const res = await fetch("http://localhost:8004/register", {
+    const res = await fetch("/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
