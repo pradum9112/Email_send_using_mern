@@ -18,7 +18,7 @@ router.post("/register", (req, res) => {
     const mailOptions = {
       from: process.env.EMAIL,
       to: email,
-      subject: "hii coder! ,Sending Email With React And Nodejs",
+      subject: "Hii coder! ,Sending Email With React And Nodejs",
       html: "<h1>Congratulation</h1> <h1> You successfully sent Email </h2>",
     };
 

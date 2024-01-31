@@ -11,5 +11,5 @@ app.use(cors());
 app.use(router);
 
 app.listen(port, () => {
-  console.log(`server start at port no :${port}`);
+  console.log(`server start at port no: ${port}`);
 });
